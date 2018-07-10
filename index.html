@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>chat</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<h1>Chat Laboratoria</h1>
+	<div id="loginContainer">
+		<div id="loggedIn">
+			<p id="userName"></p><input id="logOutButton" type="button" value="LOG OUT">
+		</div>
+		<div id="loggedOut">
+			<input  id="email" type="email">
+			<input  id="password" type="password">
+			<input id="register" onclick="register()" type="button" value="REGISTER">
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script>
+  		// Initialize Firebase
+  		var config = {
+    		apiKey: "AIzaSyDpBZP5Kg9afCFyWQG-BtokgUH7TKHFEaE",
+    		authDomain: "chat-laboratoria-af9fe.firebaseapp.com",
+    		databaseURL: "https://chat-laboratoria-af9fe.firebaseio.com",
+    		projectId: "chat-laboratoria-af9fe",
+    		storageBucket: "chat-laboratoria-af9fe.appspot.com",
+    		messagingSenderId: "1030747047910"
+  			};
+  		firebase.initializeApp(config);
+	</script>
+<script src="assets/app.js"></script>
+</body>
+</html>
